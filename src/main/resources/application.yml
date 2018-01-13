@@ -2,20 +2,12 @@ spring:
   datasource:
     name: wellup-user
     sql-script-encoding: UTF-8
-#    platform: mysql
-#    url: ${DATASOURCE_URL:jdbc:mariadb://localhost:33306/wellup-user}
-#    username: ${DATASOURCE_USERNAME:root}
-#    password: ${DATASOURCE_PASSWORD:}
-#    schema:
-#    - classpath:db/mysql/schema.sql
   jpa:
     properties:
       hibernate:
         ddl-auto: create
         show_sql: true
         format_sql: true
-#        dialect:
-#          storage_engine: innodb
   jackson:
     serialization:
       write-dates-as-timestamps: false
@@ -27,18 +19,7 @@ management:
 
 logging:
   level:
-#    root: DEBUG
     com.dominichenko.test: ${LOGGING_LEVEL:DEBUG}
-
-#flyway:
-#  enabled: true
-#  encoding: UTF-8
-#  baseline-version: 0.1
-#  schemas:
-#  - default-schema
-#  validate-on-migrate: true
-#  locations:
-#  - classpath:db/{vendor}/migration
 
 endpoints:
   cors:
