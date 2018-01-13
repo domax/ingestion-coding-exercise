@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PRODUCTS xmlns:sbmg="http://www.ccrd.com/sbmg" xmlns:xs="http://www.w3.org/2001/XMLSchema"
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xmlns:msdata="urn:schemas-microsoft-com:xml-msdata"
+          xmlns:msprop="urn:schemas-microsoft-com:xml-msprop"
+          xmlns:fo="http://www.w3.org/1999/XSL/Format"
+          xmlns:fn="http://www.w3.org/2005/xpath-functions"
+          xmlns:ernm="http://ddex.net/xml/ern/381">
+   <TRACKBUNDLE>
+      <TRACKS>
+         <TRACK>
+            <PRODUCTINFO>
+               <LANGUAGE code="all">
+                  <AMWKEY>111-SAMPLE-ABC</AMWKEY>
+                  <COPYRIGHTYEAR>1984</COPYRIGHTYEAR>
+                  <PUBLISHER>(P) 1984 Epic Records, a division of Sony Music Entertainment</PUBLISHER>
+                  <EXPLICITLYRICS>false</EXPLICITLYRICS>
+                  <TITLE>Scuttle Buttin'</TITLE>
+                  <DURATION>112</DURATION>
+                  <COPYRIGHT>(P) 1984 Epic Records, a division of Sony Music Entertainment</COPYRIGHT>
+                  <TRACKNUMBER>1</TRACKNUMBER>
+                  <ARTIST>Stevie Ray Vaughan &amp; Double Trouble</ARTIST>
+               </LANGUAGE>
+            </PRODUCTINFO>
+            <GENRES>
+               <GENRE type="main">
+                  <GENRENAME>Rock</GENRENAME>
+               </GENRE>
+            </GENRES>
+            <FILES>
+               <FILE type="original">
+                  <FILEINFO>
+                     <ACCESSSTRING>resources/111-SAMPLE-ABC.mp3</ACCESSSTRING>
+                  </FILEINFO>
+               </FILE>
+            </FILES>
+         </TRACK>
+         <TRACK>
+            <PRODUCTINFO>
+               <LANGUAGE code="all">
+                  <AMWKEY>111-SAMPLE-ABD</AMWKEY>
+                  <COPYRIGHTYEAR>1984</COPYRIGHTYEAR>
+                  <PUBLISHER>(P) 1984 Epic Records, a division of Sony Music Entertainment</PUBLISHER>
+                  <EXPLICITLYRICS>false</EXPLICITLYRICS>
+                  <TITLE>Couldn't Stand the Weather</TITLE>
+                  <DURATION>281</DURATION>
+                  <COPYRIGHT>(P) 1984 Epic Records, a division of Sony Music Entertainment</COPYRIGHT>
+                  <TRACKNUMBER>2</TRACKNUMBER>
+                  <ARTIST>Stevie Ray Vaughan &amp; Double Trouble</ARTIST>
+               </LANGUAGE>
+            </PRODUCTINFO>
+            <GENRES>
+               <GENRE type="main">
+                  <GENRENAME>Rock</GENRENAME>
+               </GENRE>
+            </GENRES>
+            <FILES>
+               <FILE type="original">
+                  <FILEINFO>
+                     <ACCESSSTRING>resources/111-SAMPLE-ABD.mp3</ACCESSSTRING>
+                  </FILEINFO>
+               </FILE>
+            </FILES>
+         </TRACK>
+         <TRACK>
+            <PRODUCTINFO>
+               <LANGUAGE code="all">
+                  <AMWKEY>111-SAMPLE-ABE</AMWKEY>
+                  <COPYRIGHTYEAR>1984</COPYRIGHTYEAR>
+                  <PUBLISHER>(P) 1984 Epic Records, a division of Sony Music Entertainment</PUBLISHER>
+                  <EXPLICITLYRICS>false</EXPLICITLYRICS>
+                  <TITLE>The Things (That) I Used to Do</TITLE>
+                  <DURATION>294</DURATION>
+                  <COPYRIGHT>(P) 1984 Epic Records, a division of Sony Music Entertainment</COPYRIGHT>
+                  <TRACKNUMBER>3</TRACKNUMBER>
+                  <ARTIST>Stevie Ray Vaughan &amp; Double Trouble</ARTIST>
+               </LANGUAGE>
+            </PRODUCTINFO>
+            <GENRES>
+               <GENRE type="main">
+                  <GENRENAME>Rock</GENRENAME>
+               </GENRE>
+            </GENRES>
+            <FILES>
+               <FILE type="original">
+                  <FILEINFO>
+                     <ACCESSSTRING>resources/111-SAMPLE-ABE.mp3</ACCESSSTRING>
+                  </FILEINFO>
+               </FILE>
+            </FILES>
+         </TRACK>
+         <TRACK>
+            <PRODUCTINFO>
+               <LANGUAGE code="all">
+                  <AMWKEY>111-SAMPLE-ABF</AMWKEY>
+                  <COPYRIGHTYEAR>1984</COPYRIGHTYEAR>
+                  <PUBLISHER>(P) 1984 Epic Records, a division of Sony Music Entertainment</PUBLISHER>
+                  <EXPLICITLYRICS>false</EXPLICITLYRICS>
+                  <TITLE>Voodoo Child (Slight Return)</TITLE>
+                  <DURATION>479</DURATION>
+                  <COPYRIGHT>(P) 1984 Epic Records, a division of Sony Music Entertainment</COPYRIGHT>
+                  <TRACKNUMBER>4</TRACKNUMBER>
+                  <ARTIST>Stevie Ray Vaughan &amp; Double Trouble</ARTIST>
+               </LANGUAGE>
+            </PRODUCTINFO>
+            <GENRES>
+               <GENRE type="main">
+                  <GENRENAME>Rock</GENRENAME>
+               </GENRE>
+            </GENRES>
+            <FILES>
+               <FILE type="original">
+                  <FILEINFO>
+                     <ACCESSSTRING>resources/111-SAMPLE-ABF.mp3</ACCESSSTRING>
+                  </FILEINFO>
+               </FILE>
+            </FILES>
+         </TRACK>
+      </TRACKS>
+   </TRACKBUNDLE>
+</PRODUCTS>

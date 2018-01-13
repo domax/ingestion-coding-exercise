@@ -1,0 +1,64 @@
+spring:
+  datasource:
+    name: wellup-user
+    sql-script-encoding: UTF-8
+#    platform: mysql
+#    url: ${DATASOURCE_URL:jdbc:mariadb://localhost:33306/wellup-user}
+#    username: ${DATASOURCE_USERNAME:root}
+#    password: ${DATASOURCE_PASSWORD:}
+#    schema:
+#    - classpath:db/mysql/schema.sql
+  jpa:
+    properties:
+      hibernate:
+        ddl-auto: create
+        show_sql: true
+        format_sql: true
+#        dialect:
+#          storage_engine: innodb
+  jackson:
+    serialization:
+      write-dates-as-timestamps: false
+
+management:
+  port: 8081
+  security:
+    enabled: false
+
+logging:
+  level:
+#    root: DEBUG
+    com.dominichenko.test: ${LOGGING_LEVEL:DEBUG}
+
+#flyway:
+#  enabled: true
+#  encoding: UTF-8
+#  baseline-version: 0.1
+#  schemas:
+#  - default-schema
+#  validate-on-migrate: true
+#  locations:
+#  - classpath:db/{vendor}/migration
+
+endpoints:
+  cors:
+    allow-credentials: true
+    allowed-origins: ${ALLOWED_ORIGINS:*}
+    allowed-methods:
+    - GET
+    - POST
+    - PUT
+    - DELETE
+    - OPTIONS
+    - HEAD
+    allowed-headers:
+    - Accept
+    - X-HTTP-Method-Override
+    - Content-Type
+    - Origin
+    - Authorization
+    max-age: 1209600
+
+security:
+  basic:
+    enabled: false

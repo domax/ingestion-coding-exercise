@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PRODUCTS xmlns:sbmg="http://www.ccrd.com/sbmg" xmlns:xs="http://www.w3.org/2001/XMLSchema"
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xmlns:msdata="urn:schemas-microsoft-com:xml-msdata"
+          xmlns:msprop="urn:schemas-microsoft-com:xml-msprop"
+          xmlns:fo="http://www.w3.org/1999/XSL/Format"
+          xmlns:fn="http://www.w3.org/2005/xpath-functions"
+          xmlns:ernm="http://ddex.net/xml/ern/381">
+   <TRACKBUNDLE>
+      <TRACKS>
+         <TRACK>
+            <PRODUCTINFO>
+               <LANGUAGE code="all">
+                  <AMWKEY>000-SAMPLE-ABC</AMWKEY>
+                  <COPYRIGHTYEAR>2010</COPYRIGHTYEAR>
+                  <PUBLISHER>(P) 2010 Sony Music Entertainment</PUBLISHER>
+                  <EXPLICITLYRICS>false</EXPLICITLYRICS>
+                  <TITLE>The Boys of Fall</TITLE>
+                  <DURATION>392</DURATION>
+                  <COPYRIGHT>(P) 2010 Sony Music Entertainment</COPYRIGHT>
+                  <TRACKNUMBER>1</TRACKNUMBER>
+                  <ARTIST>Kenny Chesney</ARTIST>
+               </LANGUAGE>
+            </PRODUCTINFO>
+            <GENRES>
+               <GENRE type="main">
+                  <GENRENAME>Country</GENRENAME>
+               </GENRE>
+            </GENRES>
+            <FILES>
+               <FILE type="original">
+                  <FILEINFO>
+                     <ACCESSSTRING>resources/000-SAMPLE-ABC.mp3</ACCESSSTRING>
+                  </FILEINFO>
+               </FILE>
+            </FILES>
+         </TRACK>
+         <TRACK>
+            <PRODUCTINFO>
+               <LANGUAGE code="all">
+                  <AMWKEY>000-SAMPLE-ABD</AMWKEY>
+                  <COPYRIGHTYEAR>2010</COPYRIGHTYEAR>
+                  <PUBLISHER>(P) 2010 Sony Music Entertainment</PUBLISHER>
+                  <EXPLICITLYRICS>false</EXPLICITLYRICS>
+                  <TITLE>Live a Little</TITLE>
+                  <DURATION>219</DURATION>
+                  <COPYRIGHT>(P) 2010 Sony Music Entertainment</COPYRIGHT>
+                  <TRACKNUMBER>2</TRACKNUMBER>
+                  <ARTIST>Kenny Chesney</ARTIST>
+               </LANGUAGE>
+            </PRODUCTINFO>
+            <GENRES>
+               <GENRE type="main">
+                  <GENRENAME>Country</GENRENAME>
+               </GENRE>
+            </GENRES>
+            <FILES>
+               <FILE type="original">
+                  <FILEINFO>
+                     <ACCESSSTRING>resources/000-SAMPLE-ABD.mp3</ACCESSSTRING>
+                  </FILEINFO>
+               </FILE>
+            </FILES>
+         </TRACK>
+         <TRACK>
+            <PRODUCTINFO>
+               <LANGUAGE code="all">
+                  <AMWKEY>000-SAMPLE-ABE</AMWKEY>
+                  <COPYRIGHTYEAR>2010</COPYRIGHTYEAR>
+                  <PUBLISHER>(P) 2010 Sony Music Entertainment</PUBLISHER>
+                  <EXPLICITLYRICS>false</EXPLICITLYRICS>
+                  <TITLE>Coastal</TITLE>
+                  <DURATION>160</DURATION>
+                  <COPYRIGHT>(P) 2010 Sony Music Entertainment</COPYRIGHT>
+                  <TRACKNUMBER>3</TRACKNUMBER>
+                  <ARTIST>Kenny Chesney</ARTIST>
+               </LANGUAGE>
+            </PRODUCTINFO>
+            <GENRES>
+               <GENRE type="main">
+                  <GENRENAME>Country</GENRENAME>
+               </GENRE>
+            </GENRES>
+            <FILES>
+               <FILE type="original">
+                  <FILEINFO>
+                     <ACCESSSTRING>resources/000-SAMPLE-ABE.mp3</ACCESSSTRING>
+                  </FILEINFO>
+               </FILE>
+            </FILES>
+         </TRACK>
+         <TRACK>
+            <PRODUCTINFO>
+               <LANGUAGE code="all">
+                  <AMWKEY>000-SAMPLE-ABF</AMWKEY>
+                  <COPYRIGHTYEAR>2010</COPYRIGHTYEAR>
+                  <PUBLISHER>(P) 2010 Sony Music Entertainment</PUBLISHER>
+                  <EXPLICITLYRICS>false</EXPLICITLYRICS>
+                  <TITLE>You and Tequila</TITLE>
+                  <DURATION>243</DURATION>
+                  <COPYRIGHT>(P) 2010 Sony Music Entertainment</COPYRIGHT>
+                  <TRACKNUMBER>4</TRACKNUMBER>
+                  <ARTIST>Kenny Chesney feat. Grace Potter</ARTIST>
+               </LANGUAGE>
+            </PRODUCTINFO>
+            <GENRES>
+               <GENRE type="main">
+                  <GENRENAME>Country</GENRENAME>
+               </GENRE>
+            </GENRES>
+            <FILES>
+               <FILE type="original">
+                  <FILEINFO>
+                     <ACCESSSTRING>resources/000-SAMPLE-ABF.mp3</ACCESSSTRING>
+                  </FILEINFO>
+               </FILE>
+            </FILES>
+         </TRACK>
+      </TRACKS>
+   </TRACKBUNDLE>
+</PRODUCTS>
