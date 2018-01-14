@@ -30,7 +30,7 @@ public class Language {
         this.code = code;
     }
 
-    @XmlElement(name="AMWKEY")
+    @XmlElement(name="AMWKEY", required = true)
     public void setAmwKey(String amwKey) {
         this.amwKey = amwKey;
     }
@@ -50,7 +50,7 @@ public class Language {
         this.explicitLyrics = explicitLyrics;
     }
 
-    @XmlElement(name="TITLE")
+    @XmlElement(name="TITLE", required = true)
     public void setTitle(String title) {
         this.title = title;
     }
@@ -70,7 +70,7 @@ public class Language {
         this.trackNumber = trackNumber;
     }
 
-    @XmlElement(name="ARTIST")
+    @XmlElement(name="ARTIST", required = true)
     public void setArtist(String artist) {
         this.artist = artist;
     }

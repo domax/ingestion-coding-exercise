@@ -22,7 +22,7 @@ public class Genre {
         this.type = type;
     }
 
-    @XmlElement(name = "GENRENAME")
+    @XmlElement(name = "GENRENAME", required = true)
     public void setGenreName(String genreName) {
         this.genreName = genreName;
     }

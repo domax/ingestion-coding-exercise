@@ -14,7 +14,6 @@ import org.springframework.web.bind.annotation.*;
 import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
-import java.util.stream.StreamSupport;
 
 import static org.springframework.util.StringUtils.hasText;
 
@@ -33,8 +32,8 @@ public class ProductRestController {
         this.recordRepository = recordRepository;
     }
 
-    @PostMapping(consumes = MediaType.APPLICATION_XML_VALUE)
     @Transactional
+    @PostMapping(consumes = MediaType.APPLICATION_XML_VALUE)
     void ingestProductsXml(@RequestBody Products products) {
         log.info("ingestProductsXml");
         log.debug("{}", products);
@@ -57,6 +56,7 @@ public class ProductRestController {
         });
     }
 
+    @Transactional
     @GetMapping(produces = MediaType.APPLICATION_JSON_UTF8_VALUE)
     @ResponseBody
     public List<Record> searchRecords(
@@ -65,24 +65,16 @@ public class ProductRestController {
             @RequestParam(name = "g", required = false) String genre) {
         log.info("searchRecords: artist={}, title={}, genre={}", artist, title, genre);
 
-        Iterable<Record> records;
-
-        if (hasText(artist) && hasText(title))
-            records = recordRepository.findRecordsByArtistContainingIgnoreCaseAndTitleContainingIgnoreCase(artist, title);
-        else if (hasText(artist))
-            records = recordRepository.findRecordsByArtistContainingIgnoreCase(artist);
-        else if (hasText(title))
-            records = recordRepository.findRecordsByTitleContainingIgnoreCase(title);
-        else records = recordRepository.findAll();
-
         final String gn = hasText(genre) ? genre.toLowerCase() : null;
-
-        List<Record> result = StreamSupport.stream(records.spliterator(), false)
+        List<Record> result = recordRepository.findAllByArtistAndTitle(
+                hasText(artist) ? artist.toLowerCase() : null,
+                hasText(title) ? title.toLowerCase() : null)
                 .filter(r -> gn == null ||
                         r.getGenres() != null && Arrays.stream(r.getGenres())
                                 .map(String::toLowerCase)
                                 .anyMatch(g -> g.contains(gn)))
                 .collect(Collectors.toList());
+
         log.info("searchRecords: {} records found", result.size());
         return result;
     }
