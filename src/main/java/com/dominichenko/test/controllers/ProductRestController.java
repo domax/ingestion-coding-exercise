@@ -35,10 +35,10 @@ public class ProductRestController {
     @Transactional
     @PostMapping(consumes = MediaType.APPLICATION_XML_VALUE)
     void ingestProductsXml(@RequestBody Products products) {
-        log.info("ingestProductsXml");
+        log.info("ingestProductsXml: {} tracks received", products.getTrackBundle().getTracks().size());
         log.debug("{}", products);
         products.getTrackBundle().getTracks().forEach(t -> {
-            Record r = new Record();
+            final Record r = new Record();
             Language l = t.getProductInfo().getLanguage();
             r.setAmwKey(l.getAmwKey());
             r.setLanguageCode(l.getCode());

@@ -1,6 +1,6 @@
 spring:
   datasource:
-    name: wellup-user
+    name: @project.artifactId@
     sql-script-encoding: UTF-8
   jpa:
     properties:
@@ -19,7 +19,7 @@ management:
 
 logging:
   level:
-    com.dominichenko.test: ${LOGGING_LEVEL:DEBUG}
+    @groupId@: ${LOGGING_LEVEL:DEBUG}
 
 endpoints:
   cors:
