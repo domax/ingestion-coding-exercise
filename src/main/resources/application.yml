@@ -19,7 +19,7 @@ management:
 
 logging:
   level:
-    @groupId@: ${LOGGING_LEVEL:DEBUG}
+    @project.groupId@: ${LOGGING_LEVEL:DEBUG}
 
 endpoints:
   cors:
