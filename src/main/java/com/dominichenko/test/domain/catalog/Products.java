@@ -1,8 +1,8 @@
 package com.dominichenko.test.domain.catalog;
 
-import lombok.EqualsAndHashCode;
-import lombok.Getter;
-import lombok.ToString;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlElementWrapper;
@@ -15,10 +15,10 @@ import java.util.List;
  */
 @SuppressWarnings("unused")
 @XmlRootElement(name = "PRODUCTS")
-@Getter @ToString @EqualsAndHashCode
+@Data @NoArgsConstructor @AllArgsConstructor
 public class Products {
 
-    @Getter @ToString @EqualsAndHashCode
+    @Data @NoArgsConstructor @AllArgsConstructor
     public static class TrackBundle {
 
         private List<Track> tracks = new ArrayList<>();

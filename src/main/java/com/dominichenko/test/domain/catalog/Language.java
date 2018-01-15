@@ -1,8 +1,8 @@
 package com.dominichenko.test.domain.catalog;
 
-import lombok.EqualsAndHashCode;
-import lombok.Getter;
-import lombok.ToString;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
 import javax.xml.bind.annotation.XmlAttribute;
 import javax.xml.bind.annotation.XmlElement;
@@ -11,7 +11,7 @@ import javax.xml.bind.annotation.XmlElement;
  * @author <a href="mailto:max@dominichenko.com">Max Dominichenko</a>
  */
 @SuppressWarnings("unused")
-@Getter @ToString @EqualsAndHashCode
+@Data @NoArgsConstructor @AllArgsConstructor
 public class Language {
 
     private String code;

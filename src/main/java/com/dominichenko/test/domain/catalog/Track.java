@@ -1,8 +1,8 @@
 package com.dominichenko.test.domain.catalog;
 
-import lombok.EqualsAndHashCode;
-import lombok.Getter;
-import lombok.ToString;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlElementWrapper;
@@ -13,7 +13,7 @@ import java.util.List;
  * @author <a href="mailto:max@dominichenko.com">Max Dominichenko</a>
  */
 @SuppressWarnings("unused")
-@Getter @ToString @EqualsAndHashCode
+@Data @NoArgsConstructor @AllArgsConstructor
 public class Track {
 
     private ProductInfo productInfo;
