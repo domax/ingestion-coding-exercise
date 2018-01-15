@@ -5,7 +5,6 @@ import lombok.Data;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
-import java.util.List;
 
 /**
  * @author <a href="mailto:max@dominichenko.com">Max Dominichenko</a>
