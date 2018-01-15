@@ -1,6 +1,8 @@
 package com.dominichenko.test.domain;
 
+import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -10,7 +12,7 @@ import javax.persistence.Id;
  * @author <a href="mailto:max@dominichenko.com">Max Dominichenko</a>
  */
 @Entity
-@Data
+@Data @NoArgsConstructor @AllArgsConstructor
 public class Record {
     @Column @Id private String amwKey;
     @Column private String languageCode;

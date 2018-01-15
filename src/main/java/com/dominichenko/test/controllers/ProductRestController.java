@@ -38,21 +38,20 @@ public class ProductRestController {
         log.info("ingestProductsXml: {} tracks received", products.getTrackBundle().getTracks().size());
         log.debug("{}", products);
         products.getTrackBundle().getTracks().forEach(t -> {
-            final Record r = new Record();
             Language l = t.getProductInfo().getLanguage();
-            r.setAmwKey(l.getAmwKey());
-            r.setLanguageCode(l.getCode());
-            r.setCopyrightYear(l.getCopyrightYear());
-            r.setPublisher(l.getPublisher());
-            r.setExplicitLyrics(l.isExplicitLyrics());
-            r.setTitle(l.getTitle());
-            r.setDuration(l.getDuration());
-            r.setCopyright(l.getCopyright());
-            r.setTrackNumber(l.getTrackNumber());
-            r.setArtist(l.getArtist());
-            r.setGenres(t.getGenres().stream().map(Genre::getGenreName).toArray(String[]::new));
-            r.setFiles(t.getFiles().stream().map(f -> f.getInfo().getAccessString()).toArray(String[]::new));
-            recordRepository.save(r);
+            recordRepository.save(new Record(
+                    l.getAmwKey(),
+                    l.getCode(),
+                    l.getCopyrightYear(),
+                    l.getPublisher(),
+                    l.isExplicitLyrics(),
+                    l.getTitle(),
+                    l.getDuration(),
+                    l.getCopyright(),
+                    l.getTrackNumber(),
+                    l.getArtist(),
+                    t.getGenres().stream().map(Genre::getGenreName).toArray(String[]::new),
+                    t.getFiles().stream().map(f -> f.getInfo().getAccessString()).toArray(String[]::new)));
         });
     }
 
